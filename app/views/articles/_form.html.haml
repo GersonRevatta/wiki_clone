@@ -1,5 +1,6 @@
 .content
   = form_for @article do |f|
+    %p= f.collection_select :category_id, Category.all, :id, :name, {promt: 'Choose a Category'}
     %p
       = f.label :title
       = f.text_field :title
