@@ -1,8 +1,9 @@
-= form_for @article do |f|
-  %p
-    = f.label :title
-    = f.text_field :title
-  %p
-    = f.label :content
-    = f.text_area :content
-  %p= f.submit
+.content
+  = form_for @article do |f|
+    %p
+      = f.label :title
+      = f.text_field :title
+    %p
+      = f.label :content
+      = f.text_area :content
+    %p= f.submit
